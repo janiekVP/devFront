@@ -24,3 +24,44 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .card {
+    @apply relative rounded-2xl border border-zinc-800 
+           bg-zinc-900/60 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-zinc-700 hover:scale-[1.02];
+  }
+
+  .card-glow {
+    @apply absolute inset-0 rounded-2xl 
+           bg-gradient-to-br from-pink-500/10 to-purple-500/10
+           opacity-0 blur-xl transition;
+  }
+
+  .card-glow-hover {
+    @apply group-hover:opacity-100;
+  }
+
+  .card-content {
+    @apply relative z-10;
+  }
+
+  .skill-card {
+    @apply flex h-30 w-30 flex-col items-center justify-center;
+  }
+
+  .project-card {
+    @apply w-full p-6;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-8 w-full;
+  }
+
+  .section-label {
+    @apply mb-4 text-sm uppercase tracking-wide;
+  }
+}
