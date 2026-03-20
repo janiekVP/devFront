@@ -84,7 +84,7 @@ export default function Home() {
         <div className="section-container">
           <h2 className="text-4xl font-bold mb-6">Projects</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-6">
             <ProjectCard
               title="TEST App"
               description="Display project information."

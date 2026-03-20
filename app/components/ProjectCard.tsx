@@ -37,10 +37,10 @@ export default function ProjectCard({
             {skills.map(({ name, icon: Icon }) => (
               <div
                 key={name}
-                className="flex items-center gap-2 rounded-lg border border-teal-900/40 bg-teal-950/50 px-3 py-1 text-xs text-gray-300"
+                className="flex items-center justify-center gap-0 rounded-lg border border-teal-900/40 bg-teal-950/50 px-2 py-1 text-xs text-gray-300 lg:justify-start lg:gap-2 lg:px-3"
               >
-                {Icon && <Icon size={14} />}
-                {name}
+                {Icon && <Icon size={15} />}
+                <span className="hidden lg:inline">{name}</span>
               </div>
             ))}
           </div>
