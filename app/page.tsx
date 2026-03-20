@@ -131,29 +131,6 @@ export default function Home() {
               github="#"
               demo="#"
             />
-
-            <ProjectCard 
-              title="TEST App"
-              description="Display project information."
-              skills={[
-                { name: "Next.js", icon: SiNextdotjs },
-                { name: "PostgreSQL", icon: SiPostgresql },
-                { name: "Docker", icon: FaDocker }
-              ]}
-              github="#"
-            />
-
-            <ProjectCard
-              title="TEST App"
-              description="Display project information."
-              skills={[
-                { name: "Next.js", icon: SiNextdotjs },
-                { name: "PostgreSQL", icon: SiPostgresql },
-                { name: "Docker", icon: FaDocker }
-              ]}
-              github="#"
-              demo="#"
-            />
           </div>
         </div>
       </section>
